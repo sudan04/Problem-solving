@@ -12,6 +12,7 @@ public class FloorOfANumber{
         while(l<=r){
             int mid = l+(r-l)/2;
             if(arr[mid]== target) return arr[mid];
+            
             if(arr[mid]<target){
                 ans= arr[mid];
                 l= mid+1;

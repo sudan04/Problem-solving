@@ -31,6 +31,7 @@ public class Search_1DArray{
     }
 
 
+
     // search target element in range of indexes
     public static int searchInRange(int[] arr, int target, int start, int end){
         for(int i=start; i<= end; i++){
