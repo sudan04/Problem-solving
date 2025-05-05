@@ -35,8 +35,8 @@ public class searchPosition_In_InfiniteArray {
         int res = search(arr, 65);  // ✅ Works
         System.out.println(res);
 
-        int res2 = search(arr, 1000);  // ✅ Safe, returns -1
-        System.out.println(res2);
+        // int res2 = search(arr, 1000);  // ✅ Safe, returns -1
+        // System.out.println(res2);
     }
 
     public static int search(int[] arr, int target) {
