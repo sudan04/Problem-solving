@@ -22,15 +22,21 @@ public class BubbleSort {
         
         // Outer loop: Repeat the sorting process for each element except the last one
         for(int i = 0; i < n - 1; i++) {
+
+            /*this flag is used to check if the array elements are swaped, if there is no swap occured during 
+            first inner loop iterations the array is alredy sorted, so we can just terminate the method  */
+           boolean isSwaped= false; 
             // Inner loop: Compare adjacent elements and swap if needed
             for(int j = 0; j < n - i - 1; j++) {
                 // If the current element is greater than the next one, swap them
                 if(arr[j] > arr[j + 1]) {
                     int temp = arr[j];       
                     arr[j] = arr[j + 1];     
-                    arr[j + 1] = temp;      
+                    arr[j + 1] = temp;   
+                    isSwaped= true;   
                 }
             }
+             if(!isSwaped) return;
         }
     }
 }
