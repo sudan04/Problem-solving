@@ -13,8 +13,8 @@ public class BinarySearch {
             int mid= left+(right-left)/2;
             
             if(arr[mid]==target) return mid;
-            else if(arr[mid]>target) right= mid-1;
-            else left= mid+1;
+            else if(arr[mid]>target) return search(target, arr, left, mid-1);
+            else return search(target, arr, mid+1, right);
         }
         
         return -1;
