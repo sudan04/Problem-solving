@@ -2,7 +2,7 @@ package Recursion;
 
 public class SumOfOneToN {
     public static void main(String[] args) {
-        System.out.println(sumToN(9));
+        System.out.println(sumToN(100));
     }
 
     // return sum of all numbers from 1 to n
